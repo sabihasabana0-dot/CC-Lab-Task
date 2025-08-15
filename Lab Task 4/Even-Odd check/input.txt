@@ -1,0 +1,6 @@
+int n = 9;
+if (n % 2 == 0) {
+    int even = 1;
+} else {
+    int odd = 1;
+}
