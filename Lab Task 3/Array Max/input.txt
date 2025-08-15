@@ -1,0 +1,15 @@
+int findMax(int arr[], int size) {
+    int max = arr[0];
+    for(int i = 1; i < size; i++) {
+        if(arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+
+int main() {
+    int nums[] = {12, 56, 34, 89, 23};
+    int maxValue = findMax(nums, 5);
+    printf("Max = %d", maxValue);
+    return 0;
+}

@@ -1,0 +1,18 @@
+void countEvenOdd(int arr[], int size, int *even, int *odd) {
+    *even = 0;
+    *odd = 0;
+    for(int i = 0; i < size; i++) {
+        if(arr[i] % 2 == 0)
+            (*even)++;
+        else
+            (*odd)++;
+    }
+}
+
+int main() {
+    int data[] = {3, 4, 7, 8, 10, 13};
+    int evenCount, oddCount;
+    countEvenOdd(data, 6, &evenCount, &oddCount);
+    printf("Even: %d, Odd: %d", evenCount, oddCount);
+    return 0;
+}

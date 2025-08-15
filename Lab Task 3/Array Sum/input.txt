@@ -1,0 +1,14 @@
+int sumArray(int arr[], int size) {
+    int sum = 0;
+    for(int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+int main() {
+    int data[] = {10, 20, 30, 40, 50};
+    int result = sumArray(data, 5);
+    printf("Sum = %d", result);
+    return 0;
+}
